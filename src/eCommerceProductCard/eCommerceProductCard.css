@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 26em;
+    background: #FFFFFF;
+    padding: 1em 1.5em;
+    box-shadow: 5px 5px 8px 1px rgb(0 0 0 / 15%);
+    margin-bottom: 2vh;
+}
+
+
+.headCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+}
+
+.cardbody{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cardCategory {
+    font-family: 'Roboto400';
+    font-style: normal;
+    font-size: 0.90em;
+    color: #A9ABA9;
+}
+
+.cardTitle {
+    font-family: 'RobotoBlack';
+    font-style: normal;
+    font-size: 1.2em;
+    color: #00A7E1;
+    line-height: 19px;
+}
+
+.titlecontainer{
+    width: 50vw;
+}
+
+.svgIconContainer {
+    width: 5em;
+    height: 5em;
+}
+
+.svgIcon {
+    display: block;
+    fill: #A9A8A9;
+    width: 100%;
+    height: 100%;
+}
+
+.linedivider {
+    background-color: #D9D8D6;
+    border-style: none;
+    height: 2px;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.padboot1 {
+    padding-bottom: 1em;
+}
+
+.cardBody-rigt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    align-items: flex-end;
+}
+
+.cardBody-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    align-items: flex-end;
+    margin-right: 2em;
+}
+
+.cardGratuita {
+    color: #A9A8A9;
+}
+
+.cardPlus{
+    color: #00A7E1;
+}
+
+.subscribe{
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cardValueGratuita{
+    font-size: 1.2em ;
+}
+
+.cardValuedashed {
+    text-decoration: line-through;
+}
+
+.cents{
+    font-size: 0.85em;
+}
+
+
+.addtocarr{
+    background-color: #FFFFFF;
+    font-family: "Roboto700";
+    font-size: 0.90em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #00A7E1;
+    text-align: center;
+    border: 2px solid #00A7E1;
+    width: 80%;
+    height: 3.5em;
+}
+
+.addtocarr:hover{
+    background-color: #007AB2;
+    color: #FFFFFF;;
+    border-style: none;
+    transition: 300ms;
+}
+
+.detail{
+    font-family: "Roboto700";
+    font-size: 0.90em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #A9A8A9;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.detail:hover {
+    color: #007AB2;
+}
+
+
+.texticon{
+    width: 15px;
+    height: 15px;
+    padding-top: 0.19em;
+    margin-left: 1em;
+}

@@ -1,0 +1,22 @@
+<template>
+
+    <section>
+        <div class="custom-select-wrapper"><select name="potencial" id="potencial" onchange={handlechange} class="custom-select sources"
+                placeholder={picklistlabel} style="display: none;">
+                <option value="" selected="">{picklistlabel}</option>
+                <template for:each={picklistvals} for:item="opcion">
+                    <option key={opcion.value} value={opcion.value}>{opcion.label}</option>
+                </template>
+            </select>
+            <div class="custom-select sources"><span class="custom-select-trigger" onclick={handleclicktrigger}>{picklistlabel}</span>
+                <div class="custom-options">
+                    <span class="custom-option" data-value="">{picklistlabel}</span>
+                    <template for:each={picklistvals} for:item="opcion">
+                    <span key={opcion.value} class="custom-option" data-value={opcion.value} onclick={handleselect}>{opcion.label}</span>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</template>

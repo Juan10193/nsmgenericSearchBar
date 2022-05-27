@@ -1,0 +1,47 @@
+<template>
+   
+    <div class ="container-principal">
+        <header class="search-header">
+            <h1 class="searchtitle">¿Qué producto estas buscando?</h1>
+            <div class="mainsearchbar slds-show_medium">
+                <div class="searchnode">
+                   <c-nsm-generic-search-bar setvalues={hospitales} picklistlabel="Hospital"></c-nsm-generic-search-bar>
+                </div>
+                <div class="searchnode">
+                    <c-nsm-generic-search-bar setvalues={categorias} picklistlabel="Categoría"></c-nsm-generic-search-bar>
+                 </div>
+                 <div class="searchnode">
+                    <c-nsm-generic-search-bar setvalues={subcategorias} picklistlabel="Subcategoría" nodivisor="true" ></c-nsm-generic-search-bar>
+                 </div>
+                 <button class="btnsearch">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="texticon">
+                        <use class="fixuse" href={rightarrow}></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="marg-double">
+                <c-e-commerce-search-products-by-name></c-e-commerce-search-products-by-name>
+            </div>
+            <div class="marg-double searchingholder">
+                <div>Mostrando 8 de 20 productos</div>
+                <div class="filterbuttons">
+                    <button class="iconcontainer buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="iconsearch">
+                            <use href={search}></use>
+                        </svg>
+                    </button>
+                    <button class="iconcontainer filtrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="iconfilter">
+                            <use href={filtergray}></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section>
+            <c-e-commerce-product-card></c-e-commerce-product-card>
+            <c-e-commerce-product-card></c-e-commerce-product-card>
+            <c-e-commerce-product-card></c-e-commerce-product-card>
+        </section>
+    </div>
+</template>
