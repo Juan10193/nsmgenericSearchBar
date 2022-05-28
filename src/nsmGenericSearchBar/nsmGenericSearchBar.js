@@ -1,5 +1,5 @@
 import { api, LightningElement , track} from 'lwc';
-import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
+import {  loadScript } from 'lightning/platformResourceLoader';
 
 export default class NsmGenericSearchBar extends LightningElement {
     @api nodivisor =false; //desactiva el borde dedivision al final del picklist
@@ -20,8 +20,6 @@ export default class NsmGenericSearchBar extends LightningElement {
             this.picklistvals.sort();
             this.picklistvals.reverse();
         }
-
-        loadStyle(this, "../RobotoBlack")
         
     }
 
