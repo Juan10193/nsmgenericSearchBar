@@ -3,7 +3,7 @@ import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 
 
 export default class ECommerceSearchProdctsContainer extends LightningElement {
-    ICONOS_PRODUCTOS= "../IconosBusquedaProductos.zip";
+    ICONOS_PRODUCTOS= ICONOS_PRODUCTOS ='https://ecommerce-starmedica.cs65.force.com/file-asset/IconosBusquedaProductos?oid=00D0m0000001wlQ&';
     hospitales =[{value:"Morelia", label:"Morelia"}, {value:"Tampico", label:"Tampico"},{value:"Morelia", label:"Morelia"}, {value:"Tampico", label:"Tampico"},{value:"Morelia", label:"Morelia"}, {value:"Tampico", label:"Tampico"}]
     categorias = [{value:"Maternidad", label:"Maternidad"}, {value:"Covid-19", label:"Covid-19"}, {value:"Checkups", label:"Checkups"}, {value:"Imagenología", label:"Imagenología"}, {value:"Laboratorio", label:"Laboratorio"}]
     subcategorias = [{value:"Paquetes", label:"Tamices"}]

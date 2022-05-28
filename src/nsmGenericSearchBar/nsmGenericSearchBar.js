@@ -26,7 +26,7 @@ export default class NsmGenericSearchBar extends LightningElement {
     }
 
     renderedCallback(){
-        loadScript(this, "../nsmjquery.js")
+        loadScript(this, "https://ecommerce-starmedica.cs65.force.com/resource/1653587716000/nsmjquery")
         .then(()=>{
             console.log('jQuery loaded');
             this.loadstyles();
