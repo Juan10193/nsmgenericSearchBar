@@ -21,7 +21,7 @@ export default class NsmGenericSearchBar extends LightningElement {
             this.picklistvals.reverse();
         }
 
-        loadStyle(this, "../RobotoBlack.css")
+        loadStyle(this, "../RobotoBlack")
         
     }
 
