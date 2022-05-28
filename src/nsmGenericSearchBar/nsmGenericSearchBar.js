@@ -1,11 +1,14 @@
 import { LightningElement ,api, track} from 'lwc';
 import  'c/nsmjquery';
 export default class NsmGenericSearchBar extends LightningElement {
-    @api percentage;
+    @api nodivisor  //desactiva el borde dedivision al final del picklist
+    @api sortAsc     // si es true ordena el elemento ASCENDENDTE
+    @api sortDesc  //  si es true y sortAsc es false ordena el elemento descendente
+    @api value;      //valor seleccionado del picklist
+    @api setvalues;  //valores del picklist [{value:"hola", label:"hi"} ,{"value":"adios", label:"bye"}]
+    @api picklistlabel; 
 
-    get style() {
-        return `width: ${this.percentage}%`;
-    }
+    @track picklistvals;
 
 
     connectedCallback(){
