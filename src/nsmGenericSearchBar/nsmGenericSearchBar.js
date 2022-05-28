@@ -1,6 +1,6 @@
 import { api, LightningElement , track} from 'lwc';
 import {  loadScript } from 'lightning/platformResourceLoader';
-
+import  'c/nsmjquery';
 export default class NsmGenericSearchBar extends LightningElement {
     @api nodivisor =false; //desactiva el borde dedivision al final del picklist
     @api sortAsc = false;    // si es true ordena el elemento ASCENDENDTE
@@ -24,7 +24,7 @@ export default class NsmGenericSearchBar extends LightningElement {
     }
 
     renderedCallback(){
-        loadScript(this, "https://ecommerce-starmedica.cs65.force.com/resource/1653587716000/nsmjquery")
+        loadScript(this, "")
         .then(()=>{
             console.log('jQuery loaded');
             this.loadstyles();
